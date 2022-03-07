@@ -8,4 +8,5 @@
  */
 
 rootProject.name = "developer-diary"
-include("app", "list", "utilities")
+include("reactive")
+
