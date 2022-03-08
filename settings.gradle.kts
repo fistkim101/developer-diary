@@ -9,4 +9,4 @@
 
 rootProject.name = "developer-diary"
 include("reactive")
-
+include("shared:common")

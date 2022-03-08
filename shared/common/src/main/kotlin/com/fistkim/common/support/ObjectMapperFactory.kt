@@ -1,4 +1,4 @@
-package com.fistkim.reactive.support
+package com.fistkim.common.support
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -23,5 +23,4 @@ object ObjectMapperFactory {
                 .build()
         )
     }
-
 }

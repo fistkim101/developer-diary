@@ -1,6 +1,6 @@
 package com.fistkim.reactive.user.`interface`
 
-import com.fistkim.reactive.user.model.User
+import com.fistkim.common.model.User
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
