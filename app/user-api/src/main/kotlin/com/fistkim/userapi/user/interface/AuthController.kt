@@ -1,9 +1,7 @@
 package com.fistkim.userapi.user.`interface`
 
 import User
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 /**
  *
@@ -14,7 +12,15 @@ class AuthController {
 
     @PostMapping("/user")
     fun register(@RequestBody user: User): String {
+        println("register in")
         return user.toString()
+    }
+
+    @GetMapping("/user")
+    fun index(@RequestHeader(name = "Content-Location") location: String): String {
+        println("index in")
+        println("location : $location")
+        return "success"
     }
 
 }

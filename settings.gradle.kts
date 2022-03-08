@@ -10,5 +10,6 @@
 rootProject.name = "developer-diary"
 include(":app:user-api")
 include(":system:core-web")
+include(":system:user-webclient")
 include(":domain:user-domain")
 include(":support:util")
