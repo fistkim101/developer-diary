@@ -8,5 +8,7 @@
  */
 
 rootProject.name = "developer-diary"
-include("reactive")
-include("shared:common")
+include(":app:user-api")
+include(":system:core-web")
+include(":domain:user-domain")
+include(":support:util")
