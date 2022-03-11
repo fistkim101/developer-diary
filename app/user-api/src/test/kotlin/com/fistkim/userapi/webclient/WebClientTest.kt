@@ -4,6 +4,7 @@ import User
 import com.fistkim.coreweb.webclient.WebClientBuilder
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
+import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.web.reactive.function.BodyInserters
 import java.util.*
 
@@ -11,6 +12,7 @@ import java.util.*
  *
  * @author Leo
  */
+@SpringBootTest
 class WebClientTest {
 
     val userApiWebClient = WebClientBuilder.webClientBuilder().build()

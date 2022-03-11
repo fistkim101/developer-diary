@@ -8,6 +8,7 @@
 
 ### Spring
 * 컨트롤러 핸들러의 serialization/deserialization 커스텀하기
+* @SpringBootTest 이해하기
 
 <br>
 

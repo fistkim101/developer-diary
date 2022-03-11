@@ -23,4 +23,9 @@ class AuthController {
         return "success"
     }
 
+    @GetMapping("/hello")
+    fun hello(): String {
+        return "success"
+    }
+
 }
