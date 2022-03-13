@@ -25,7 +25,9 @@ object WebClientBuilder {
             logger.debug("request body : {}", request.body())
 
             // ExchangeFunction : Represents a function that exchanges a request for a (delayed) ClientResponse. Can be used as an alternative to WebClient.
-            // exchangeFunction 은 주어진 request를 예정된 response와 exchange 해준다. 'response 에 앞서서 파라미터로 받은 request를 선행 배치' 한다는 개념으로 'exchange'를 이해했다.
+            // 여기서 request와 ClientResponse를 exchange 한다는 개념이 이해가 잘 가지 않았는데, 코드를 까보면(spring-web-5.3.16-sources.jar!/org/springframework/http/client/reactive/ReactorClientHttpConnector.java:113)
+            // 에서 실제로 요청할 request를 통해서 response를 가져오는 것을 알 수 있다. 이게 곧 request 와 response 를 교환한다는 것이다. exchange 자체가 Mono<ClientResponse> 를 output 으로 하는 function 이라는 것을 생각하면 이해가 더 쉽다.
+            // 즉, request 를 보내고 response 를 받는 일반적인 과정을 '교환'이라는 의미로 해석하면 이해가 쉽다. 이 '교환' 절차 전에 request에 특별한 가공을 한다던가, 로깅과 같은 행위를 할 수 있기 때문에 filter라고 말할 수 있다.
             exchangeFunction.exchange(request)
         }
 
