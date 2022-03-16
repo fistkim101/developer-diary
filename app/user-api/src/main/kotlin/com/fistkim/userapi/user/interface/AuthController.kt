@@ -1,6 +1,7 @@
 package com.fistkim.userapi.user.`interface`
 
 import User
+import com.fistkim.userapi.config.AppConfig
 import org.springframework.web.bind.annotation.*
 
 /**
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.*
  * @author Leo
  */
 @RestController
-class AuthController {
+class AuthController(val appConfig: AppConfig) {
 
     @PostMapping("/user")
     fun register(@RequestBody user: User): String {
@@ -25,6 +26,7 @@ class AuthController {
 
     @GetMapping("/hello")
     fun hello(): String {
+        appConfig.profileTest()
         return "success"
     }
 

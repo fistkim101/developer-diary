@@ -9,6 +9,8 @@
 ### Spring
 * 컨트롤러 핸들러의 serialization/deserialization 커스텀하기
 * @SpringBootTest 이해하기
+* webclient 이해하기
+* 다중 profile 사용
 
 <br>
 
@@ -19,5 +21,6 @@
 
 ### etc
 * 인텔리제이 내에서 .http 이용해서 테스트하기
+* 무조건 gradle wrapper 사용을 하도록 하자
 
 <br>
