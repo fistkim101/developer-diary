@@ -9,3 +9,7 @@
 * 에러 공통화
 * slack, email 등 노티 모듈
 * 캐시서버 관련 세팅 
+* netflix zuul 관련 세팅 및 인증절차, 로깅절차 등 서버 구조(netflix zuul 쓰나 애초에?)
+* annotation 이용하여 applicationContext 에서 bean 필터링 해서 필요한 bean 을 가져오는 것
+* 멀티모듈에서 빈 주입을 위해서 패키지 패스 맞춰줬다.(https://techblog.woowahan.com/2637/ 참고해서) 서브 모듈을 implementation 했을때 상위모듈에서 정확히 어떤 일들이 발생하는지 확실하게 이해하기
+* 
