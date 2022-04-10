@@ -12,6 +12,9 @@ repositories {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
 
+    // excel
+    implementation("org.apache.poi:poi-ooxml:5.2.2")
+
     // json
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.1")
 }
